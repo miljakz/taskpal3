@@ -1,0 +1,7 @@
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.csproj.AssemblyReference.cache
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.Form1.resources
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.SignUpForm.resources
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.LoginForm.resources
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.Properties.Resources.resources
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.csproj.GenerateResource.cache
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.csproj.CoreCompileInputs.cache
