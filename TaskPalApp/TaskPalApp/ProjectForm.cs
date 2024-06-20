@@ -1,5 +1,5 @@
-using System.Windows.Forms;
 using System;
+using System.Windows.Forms;
 
 namespace TaskPalApp
 {
@@ -14,14 +14,20 @@ namespace TaskPalApp
             if (project != null)
             {
                 txtTitle.Text = project.Title;
+                txtDescription.Text = project.Description;
+                dtpDueDate.Value = project.DueDate;
+                chkIsUrgent.Checked = project.IsUrgent;
             }
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             Project = new ProjectItem
             {
-                Title = txtTitle.Text
+                Title = txtTitle.Text,
+                Description = txtDescription.Text,
+                DueDate = dtpDueDate.Value,
+                IsUrgent = chkIsUrgent.Checked
             };
 
             DialogResult = DialogResult.OK;
