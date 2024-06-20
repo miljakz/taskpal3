@@ -14,6 +14,7 @@
 
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.listView1 = new System.Windows.Forms.ListView();
             this.lstTasks = new System.Windows.Forms.ListBox();
@@ -33,24 +34,28 @@
             // 
             // listView1
             // 
+            this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(250, 18);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(300, 200);
             this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // lstTasks
             // 
             this.lstTasks.Location = new System.Drawing.Point(18, 250);
             this.lstTasks.Name = "lstTasks";
-            this.lstTasks.Size = new System.Drawing.Size(200, 150);
+            this.lstTasks.Size = new System.Drawing.Size(200, 147);
             this.lstTasks.TabIndex = 2;
             // 
             // lstProjects
             // 
             this.lstProjects.Location = new System.Drawing.Point(250, 250);
             this.lstProjects.Name = "lstProjects";
-            this.lstProjects.Size = new System.Drawing.Size(200, 150);
+            this.lstProjects.Size = new System.Drawing.Size(200, 147);
             this.lstProjects.TabIndex = 3;
             // 
             // btnAddTask
@@ -75,7 +80,7 @@
             // 
             // btnDeleteTask
             // 
-            this.btnDeleteTask.Location = new System.Drawing.Point(500, 330);
+            this.btnDeleteTask.Location = new System.Drawing.Point(605, 290);
             this.btnDeleteTask.Name = "btnDeleteTask";
             this.btnDeleteTask.Size = new System.Drawing.Size(100, 30);
             this.btnDeleteTask.TabIndex = 6;
@@ -85,7 +90,7 @@
             // 
             // btnMarkComplete
             // 
-            this.btnMarkComplete.Location = new System.Drawing.Point(500, 370);
+            this.btnMarkComplete.Location = new System.Drawing.Point(551, 326);
             this.btnMarkComplete.Name = "btnMarkComplete";
             this.btnMarkComplete.Size = new System.Drawing.Size(100, 30);
             this.btnMarkComplete.TabIndex = 7;
@@ -95,7 +100,7 @@
             // 
             // btnAddProject
             // 
-            this.btnAddProject.Location = new System.Drawing.Point(500, 410);
+            this.btnAddProject.Location = new System.Drawing.Point(605, 250);
             this.btnAddProject.Name = "btnAddProject";
             this.btnAddProject.Size = new System.Drawing.Size(100, 30);
             this.btnAddProject.TabIndex = 8;
@@ -107,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lstTasks);
@@ -119,7 +124,9 @@
             this.Controls.Add(this.btnAddProject);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+
         }
     }
 }

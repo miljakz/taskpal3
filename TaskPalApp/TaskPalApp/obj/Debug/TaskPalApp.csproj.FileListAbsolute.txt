@@ -5,3 +5,8 @@ C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\Ta
 C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.Properties.Resources.resources
 C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.csproj.GenerateResource.cache
 C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.csproj.CoreCompileInputs.cache
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\bin\Debug\TaskPalApp.exe.config
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\bin\Debug\TaskPalApp.exe
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\bin\Debug\TaskPalApp.pdb
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.exe
+C:\Users\zmiljak\OneDrive - Adris Grupa d.d\Dokumenti\PRojekt Task\TaskPalApp\TaskPalApp\obj\Debug\TaskPalApp.pdb

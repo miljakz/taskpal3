@@ -218,5 +218,10 @@ namespace TaskPalApp
             this.Controls.Add(pictureBox1);
             this.Controls.SetChildIndex(pictureBox1, 0);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
