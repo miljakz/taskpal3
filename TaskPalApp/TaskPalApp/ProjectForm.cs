@@ -1,33 +1,34 @@
 using System;
 using System.Windows.Forms;
+using TaskPalApp.Models;
 
 namespace TaskPalApp
 {
-    public partial class ProjectForm : Form
+    partial class ProjectForm : Form
     {
-        public ProjectItem Project { get; private set; }
+        private TextBox txtTitle;
+        private TextBox txtDescription;
+        private CheckBox chkIsUrgent;
+        private DateTimePicker dtpDueDate;
+        private Button btnOK;
+        private Button btnCancel;
 
-        public ProjectForm(ProjectItem project = null)
+        public ProjectItem Project { get; private set; } // Define a public property for Project
+
+        public ProjectForm()
         {
             InitializeComponent();
-
-            if (project != null)
-            {
-                txtTitle.Text = project.Title;
-                txtDescription.Text = project.Description;
-                dtpDueDate.Value = project.DueDate;
-                chkIsUrgent.Checked = project.IsUrgent;
-            }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
+            // Create a new ProjectItem instance based on user input
             Project = new ProjectItem
             {
                 Title = txtTitle.Text,
                 Description = txtDescription.Text,
-                DueDate = dtpDueDate.Value,
-                IsUrgent = chkIsUrgent.Checked
+                IsUrgent = chkIsUrgent.Checked,
+                DueDate = dtpDueDate.Value
             };
 
             DialogResult = DialogResult.OK;
@@ -38,6 +39,11 @@ namespace TaskPalApp
         {
             DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using TaskPalApp.Models;
 
 namespace TaskPalApp
 {
@@ -11,10 +12,16 @@ namespace TaskPalApp
         {
             InitializeComponent();
 
+            // Set the maximum value for priority to 2 (High)
+            numPriority.Maximum = 2;
+
             if (task != null)
             {
                 txtTitle.Text = task.Title;
+                txtDescription.Text = task.Description;
                 chkIsCompleted.Checked = task.IsCompleted;
+                dtpDueDate.Value = task.DueDate;
+                numPriority.Value = (int)task.Priority;
             }
         }
 
@@ -23,8 +30,10 @@ namespace TaskPalApp
             Task = new TaskItem
             {
                 Title = txtTitle.Text,
+                Description = txtDescription.Text,
+                DueDate = dtpDueDate.Value,
                 IsCompleted = chkIsCompleted.Checked,
-                DueDate = dtpDueDate.Value
+                Priority = (Priority)(int)numPriority.Value // Cast numPriority.Value to Priority
             };
 
             DialogResult = DialogResult.OK;
